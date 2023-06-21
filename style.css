@@ -1,0 +1,214 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --red: #FF0060;
+    --winning-blocks:#9376E0; 
+}
+body {
+    color:var(--red);
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-size: 37px;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0.4em;
+    width: 6em;
+    justify-content: center;
+    display: flex;
+    
+}
+.container{
+    padding :40px;
+    height: 50%;
+    display: flex;
+    /* justify-content:center; */
+    align-items:center;
+    flex-direction:column;
+    background-color:#FFEEEE;
+}
+#gameboard{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box
+{
+    height: 0.8em;
+    width: 0.8em;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--red);
+    font-size:120px;
+    border-right:2px solid;
+    border-bottom:2px solid;
+    border-left:2px solid;
+    border-top: 2px solid;
+}
+/* .box:nth-child(3n)
+{
+ border-right: none;
+}
+.box:nth-child(6) ~ .box
+{
+    border-bottom: none;
+}  */
+button
+{
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: #FFEEEE;
+    /* color:#333; */
+    border-color: var(--red);
+    /* font-size:18px;
+  
+    font-weight: 600; */
+    transition-duration: 0.4s;
+}
+button:hover{
+   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: var(--red);
+    
+}
+#restartBtn{
+    font-size: 1em;
+    color:#2B2730;
+}
+#restartBtn:hover{
+    font-size: 1em;
+    color:#EEEEEE;
+}
+
+#my{
+    height: 9vw;
+    width: 9vw;
+    position: fixed;
+    transition: ease-in-out;
+    animation-duration: 2s;
+    bottom: 16em;
+    left: 14em;
+    visibility: hidden;
+  
+
+}
+#second{
+    height: 9vw;
+    width: 9vw;
+    position: fixed;
+    transition:ease-in-out;
+    animation-duration: 2s;
+    bottom: 16em;
+    right: 14em;
+    visibility: hidden;
+   
+   
+}
+li{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    color:#FFFAF4;
+    background-color: #FB2576;
+  font-family: 'Anton', sans-serif;;
+}
+
+
+
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 768px) {
+    /* Add your CSS rules here */
+    #my{
+        height: 32%;
+        width: 12%;
+        position: absolute;
+        transition: ease-in-out;
+        animation-duration: 2s;
+        bottom: 39%;
+        left: 9%;
+        visibility: hidden;
+      
+    
+    }
+    #second{
+        height: 32%;
+        width: 11%;
+        position: absolute;
+        transition: ease-in-out;
+        animation-duration: 2s;
+        bottom: 39%;
+        right: 15%;
+        visibility: hidden;
+       
+       
+    /* This code will apply only to screens larger than 768px */
+  }
+}
+  
+  /* Styles for screens smaller than or equal to 768px */
+  @media screen and (max-width: 768px) {
+    /* Add your CSS rules here */
+    #my{
+        height: 20%;
+        width: 9%;
+        position: absolute;
+        transition: ease-in-out;
+        animation-duration: 2s;
+        bottom: 11em;
+        left: 7em;
+        visibility: hidden;
+      
+    
+    }
+    #second{
+        height: 20%;
+        width: 8%;
+        position: absolute;
+        transition: ease-in-out;
+        animation-duration: 2s;
+        bottom: 51%;
+        right: 18%;
+        visibility: hidden;
+       
+       
+    /* This code will apply only to screens larger than 768px */
+  }
+    /* This code will apply only to screens smaller than or equal to 768px */
+  }
+  
+  /* Styles for screens smaller than or equal to 480px */
+  @media screen and (max-width: 480px) {
+
+    /* Add your CSS rules here */
+  
+    #my{
+        height: 19%;
+        width: 13%;
+        position: absolute;
+        transition: ease-in-out;
+        animation-duration: 2s;
+        bottom: 49%;
+        left: 84%;
+      
+    
+    }
+    #second{
+        height: 16%;
+        width: 14%;
+        position: absolute;
+        transition: ease-in-out;
+        animation-duration: 2s;
+        bottom: 50%;
+        right: 85%;
+        visibility: hidden;
+       
+       
+    /* This code will apply only to screens larger than 768px */
+  }
+    /* This code will apply only to screens smaller than or equal to 480px */
+}
