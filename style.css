@@ -11,6 +11,10 @@
 body {
     color:var(--red);
     font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #FFEEEE
 }
 html{
     width: 100%;
